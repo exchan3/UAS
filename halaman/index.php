@@ -44,6 +44,9 @@ if(isset($_GET['page']))
  case "soal":
  include "../halaman/soal.php";
  break;
+ case "session";
+ include "../halaman/session.php";
+ break;
  case "jawab":
  include "../halaman/jawab.php";
  break;
