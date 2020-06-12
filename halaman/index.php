@@ -57,7 +57,7 @@ if(isset($_GET['page']))
  default:
  echo"Maaf... Halaman Tidak Ditemukan";
  break;
-
+		 
 }
 }
 ?>
