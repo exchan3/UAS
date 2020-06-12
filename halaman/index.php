@@ -23,16 +23,16 @@
 		</tr>
 		<tr>
 			<td>
-				<center><p class="lead">Selamat datang di Quiz Online Kelompok IV.</p></center>
+				<center><p class="lead">Selamat Datang di Kuis Online Kelompok VI.</p></center>
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<center><p>jawab soal-soal ini dengan benar ya.. :D</p></center>
+				<center><p>Jawab soal-soal ini dengan benar ya.. :D</p></center>
 			</td>
 		</tr>
 		<tr>
-			<td><center><a class="btn btn-primary btn-lg" href="index.php?page=soal" role="button">Mulai Quiz</a></cente></td>
+			<td><center><a class="btn btn-primary btn-lg" href="index.php?page=soal" role="button">Mulai Kuis</a></center></td>
 		</tr>
 	</table> <br><br>
 	
