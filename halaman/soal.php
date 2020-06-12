@@ -21,7 +21,7 @@ include "../koneksi.php";
  
     $no = $_SESSION['no'];
  
-    if(isset($_POST['next'])){
+    if(isset($_POST['Selanjutnya'])){
  
         $_SESSION['jawab'][] = $_POST['option'];
  
@@ -75,7 +75,7 @@ include "../koneksi.php";
         </p>
  
         
-        <input type="submit" name="next" value="next">
+        <input type="submit" name="Selanjutnya" value="Selanjutnya">
  
     </form>
  </div>
