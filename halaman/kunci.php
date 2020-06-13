@@ -95,7 +95,6 @@
  
     </table>
  
-	<div align="center"><a href="index.php?page=jawab">Kembali ke Result</a></div>
 	<div align="center"><a href="../index.php">Kembali ke Home</a></div>
 </body>
 </html>
