@@ -19,11 +19,9 @@
 	$jwb=$_POST['jawaban'];
 	$aktif=$_POST['aktif'];
 	
-	mysqli_query($koneksi, "INSERT INTO tbl_soal(id_soal, soal, a, b, c, d, knc_jawaban, jawaban, aktif)values('$idsoal','$soal','$a','$b','$c','$d','$knc','$jwb',$aktif)");
+	mysqli_query($koneksi, "INSERT INTO tbl_soal(id_soal, soal, a, b, c, d, knc_jawaban, jawaban, aktif)values('$idsoal','$soal','$a','$b','$c','$d','$knc','$jwb','$aktif')");
 	
-	header("location:halaman_admin.php");
-		
-	
+	header("location:tambah_soal.php");
 	
 	?>
 </body>
