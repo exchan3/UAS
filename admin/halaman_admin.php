@@ -38,7 +38,7 @@
 			<td><?php echo $soal['aktif']; ?></td>
 			
 			<td><a href="#">Edit</a></td>    
-			<td><a href="#">Hapus</a></td>  
+			<td><a href="hapus.php?id_soal=<?php echo $soal['id_soal']; ?>">Hapus</a></td>  
 		</tr>  
 		<?php
 		 $n++; } 
