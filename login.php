@@ -7,13 +7,13 @@
 
 <body>
 	<?php
-	include"koneksi.php";
+	include "koneksi.php";
 	$iduser=$_POST['id_user'];
 	$nama=$_POST['nama'];
 	$email=$_POST['email'];
-	$alamat=$_POST['alamat'];
+	$password=md5($_POST['password']);
 	
-	mysqli_query($koneksi, "INSERT INTO peserta(id_user, nama, email, alamat)values('$iduser','$nama','$email','$alamat')");
+	mysqli_query($koneksi, "INSERT INTO peserta(id_user, nama, email, password)values('$iduser','$nama','$email','$password')");
 	
 	header("location:halaman/index.php");
 		
