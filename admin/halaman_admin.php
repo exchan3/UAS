@@ -6,6 +6,7 @@
 </head>
 
 <body>
+	<h2><center>WELCOME TO ADMIN ROOM</center></h2>
 	<a href="tambah_soal.php"><button>Tambah</button> </a>
 	<table width="100%" border="1" cellspacing="0" cellpadding="0" align="center" style="text-align: center"> 
 		<tr>   
@@ -39,9 +40,12 @@
 			
 			<td><a href="#">Edit</a></td>    
 			<td><a href="hapus.php?id_soal=<?php echo $soal['id_soal']; ?>">Hapus</a></td>  
-		</tr>  
+		</tr> 
 		<?php
 		 $n++; } 
 		?> 
+	</table>
+	<br><br>
+	<a href="logout.php">Logout</a>
 </body>
 </html>
