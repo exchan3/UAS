@@ -5,20 +5,36 @@
 <title>Edit Soal</title>
 </head>
 
+
+<h2 align=center> EDIT SOAL</h2>
 <body>
 	<?php
-	include"../koneksi.php";
-	$idsoal=isset($_GET['id_soal']);
-	$data=mysqli_query($koneksi,"select * from tbl_soal where id_soal='$idsoal'");
-	while ($d=mysqli_fetch_array($data)){?>
-	<form action="edit.php" method="post">
-		<input type="hidden" name="id_soal" value="<?php echo $idsoal; ?>">
+	include "../koneksi.php";	
+
+	$idsoal = $_GET['id_soal'];
+	
+	$result = mysqli_query($koneksi, "SELECT * FROM tbl_soal WHERE id_soal='$idsoal'");
+	
+	if(mysqli_num_rows($result) == 0){
+		
+		echo '<script>window.history.back()</script>';
+		
+	}else{
+
+		$data = mysqli_fetch_assoc($result);	
+	
+	}
+	?>
+	<form action="edit.php" method="POST">
+		
 		<table border="0">
 		
 		<tr>
 		<td>Masukan Soal</td>
 		<td>:</td>
-		<td><input type="text" name="soal" id="soal" value="<?php echo $d['soal']; ?>"required/></td>
+		<td>
+		<input type="hidden" name="id_soal" value="<?php echo $idsoal; ?>">
+		<input type="text" name="soal" id="soal" value="<?php echo $d['soal']; ?>"required/></td>
 		</tr>
 		
 		<tr>
@@ -67,13 +83,12 @@
 		<tr>
 		<td><button type="submit">Submit</button>
 			<a href="halaman_admin.php">Back</a>	
-		<td>	
+		</td>	
 		
 		</tr>
 		
 			
 		</table>
-		</form><?php
-}?>
+		</form>
 </body>
 </html>
