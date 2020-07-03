@@ -19,9 +19,9 @@
 	$jwb=$_POST['jawaban'];
 	$aktif=$_POST['aktif'];
 	
-	mysqli_query($koneksi, "INSERT INTO tbl_soal(id_soal, soal, a, b, c, d, knc_jawaban, jawaban, aktif)values('$idsoal','$soal','$a','$b','$c','$d','$knc','$jwb','$aktif')");
-	
-	header("location:edit_soal.php");
+	mysqli_query($koneksi,"UPDATE tbl_soal SET soal='$soal', a='$a', b='$b', c='$c', d='$d', knc_jawaban='$knc', jawaban='$jwb', aktif='$aktif' WHERE id_soal='$idsoal'") or die(mysql_error());
+	 
+	header("location:menusoal.php?pesan=update");
 	
 	?>
 </body>
