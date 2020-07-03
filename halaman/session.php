@@ -4,7 +4,7 @@
  
     session_start();
  
-    $query = mysqli_query($koneksi,"select * from tbl_soal by rand()") or die (mysqli_error());
+    $query = mysqli_query($koneksi,"select * from tbl_soal by rand() limit 10") or die (mysqli_error());
  
     //$_SESSION['soal'] = mysql_fetch_array($query);
  
