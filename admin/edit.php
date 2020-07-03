@@ -21,7 +21,7 @@
 	
 	mysqli_query($koneksi,"UPDATE tbl_soal SET soal='$soal', a='$a', b='$b', c='$c', d='$d', knc_jawaban='$knc', jawaban='$jwb', aktif='$aktif' WHERE id_soal='$idsoal'") or die(mysql_error());
 	 
-	header("location:menusoal.php?pesan=update");
+	header("location:halaman_admin.php?pesan=update");
 	
 	?>
 </body>
