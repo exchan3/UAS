@@ -16,9 +16,7 @@
 	$result = mysqli_query($koneksi, "SELECT * FROM tbl_soal WHERE id_soal='$idsoal'");
 	
 	if(mysqli_num_rows($result) == 0){
-		
-		echo '<script>window.history.back()</script>';
-		
+	
 	}else{
 
 		$data = mysqli_fetch_assoc($result);	
@@ -34,19 +32,19 @@
 		<td>:</td>
 		<td>
 		<input type="hidden" name="id_soal" value="<?php echo $idsoal; ?>">
-		<input type="text" name="soal" id="soal" value="<?php echo $d['soal']; ?>"required/></td>
+		<input type="text" name="soal" id="soal" value="<?php echo $data['soal']; ?>"required/></td>
 		</tr>
 		
 		<tr>
 		<td>Pilihan A</td>
 		<td>:</td>
-		<td><input type="text" name="a" id="a" value="<?php echo $d['a']; ?>"required/></td>
+		<td><input type="text" name="a" id="a" value="<?php echo $data['a']; ?>"required/></td>
 		</tr>
 			
 		<tr>
 		<td>Pilihan B</td>
 		<td>:</td>
-		<td><input type="text" name="b" id="b" value="<?php echo $d['b']; ?>"required/></td>
+		<td><input type="text" name="b" id="b" value="<?php echo $data['b']; ?>"required/></td>
 		</tr>
 			
 		<tr>
@@ -64,20 +62,20 @@
 		<tr>
 		<td>Kunci</td>
 		<td>:</td>
-		<td><input type="text" name="knc_jawaban" id="knc" value="<?php echo $d['knc_jawaban']; ?>"required/></td>
+		<td><input type="text" name="knc_jawaban" id="knc" value="<?php echo $data['knc_jawaban']; ?>"required/></td>
 		</tr>
 			
 		<tr>
 		<td>Jawaban</td>
 		<td>:</td>
-		<td><input type="text" name="jawaban" id="jwb" value="<?php echo $d['jawaban']; ?>"required/></td>
+		<td><input type="text" name="jawaban" id="jwb" value="<?php echo $data['jawaban']; ?>"required/></td>
 		</tr>
 		
 		<tr>
 		<td>Aktif</td>
 		<td>:</td>
-		<td><input type="radio" name="aktif" id="aktif" value="Y" value="<?php echo $d['aktif']; ?>"><label>Yes</label>
-			<input type="radio" name="aktif" id="aktif" value="N" value="<?php echo $d['aktif']; ?>"><label>No</label></td>
+		<td><input type="radio" name="aktif" id="aktif" value="Y" value="<?php echo $data['aktif']; ?>"><label>Yes</label>
+			<input type="radio" name="aktif" id="aktif" value="N" value="<?php echo $data['aktif']; ?>"><label>No</label></td>
 		</tr>
 			
 		<tr>
