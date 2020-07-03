@@ -1,10 +1,10 @@
 <?php
  
-    include 'koneksi.php';
+    include '../koneksi.php';
  
     session_start();
  
-    $query = mysqli_query($koneksi,"select * from tbl_soal WHERE aktif='Y'") or die (mysqli_error());
+    $query = mysqli_query($koneksi,"select * from tbl_soal by rand()") or die (mysqli_error());
  
     //$_SESSION['soal'] = mysql_fetch_array($query);
  
