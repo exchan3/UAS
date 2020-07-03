@@ -38,7 +38,7 @@
 			<td><?php echo $soal['jawaban']; ?></td> 
 			<td><?php echo $soal['aktif']; ?></td>
 			
-			<td><a href="edit_soal.php">Edit</a></td>    
+			<td><a href="edit_soal.php?id_soal=<?php echo $soal['id_soal']; ?>">Edit</a></td>   
 			<td><a href="hapus.php?id_soal=<?php echo $soal['id_soal']; ?>">Hapus</a></td>  
 		</tr> 
 		<?php
