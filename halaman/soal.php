@@ -37,7 +37,6 @@
  
 ?>
 
-<a href="index.php">Kembali ke soal 1</a>
  
     <form action="" method="POST">
  
