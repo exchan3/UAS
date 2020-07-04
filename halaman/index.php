@@ -61,6 +61,6 @@ if(isset($_GET['page']))
 }
 }
 ?>
-	  <a href="logout"></a>
+	  <a href="logout.php">LOGOUT</a>
 </body>
 </html>
