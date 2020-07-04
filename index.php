@@ -17,7 +17,7 @@
 		<form action="login.php" method="post">
 			<div>
 					<label>Email</label>
-					<input type="email" name="email" placeholder="Email Anda"  class="form-control" size="38" required/>
+					<input type="text" name="email" placeholder="Email Anda"  class="form-control" size="38" required/>
 			</div>
 			<div>
 					<label>Password</label>
