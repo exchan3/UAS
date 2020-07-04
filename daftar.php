@@ -18,7 +18,7 @@
 			</div>
 			<div>
 					<label>Email</label>
-					<input type="email" name="email" placeholder="Email Anda"  class="form-control" size="38" required/>
+					<input type="text" name="email" placeholder="Email Anda"  class="form-control" size="38" required/>
 			</div>
 			<div>
 					<label>Password</label>
@@ -42,7 +42,7 @@
                 $password1 = mysqli_real_escape_string($koneksi, $_POST['password1']);
                 $password2 = mysqli_real_escape_string($koneksi, $_POST['password2']);
             if ($password1 == $password2){
-                mysqli_query($koneksi, "INSERT INTO peserta VALUES ('', '$nama', '$email', '$password1')");
+                mysqli_query($koneksi, "INSERT INTO peserta(id_user, nama, email, password, aktif) VALUES ('', '$nama', '$email', '$password1',1)");
                 echo "<center><h3><script>alert('Berhasil Daftar');</script></h3></center>";
                 header("refresh:0;url=index.php");
             } else
